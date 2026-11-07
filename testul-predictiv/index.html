@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Testul predictiv cu barem · ghid și listă de verificare pentru clasele pregătitoare – a IV-a</title>
+<meta name="description" content="Evaluarea inițială la clasele pregătitoare – a IV-a: ce spune legea despre calificative și catalog, cum construiești testul predictiv pe competențele clasei anterioare, matricea de specificații, baremul cu descriptori pentru FB / B / S / I, centralizarea rezultatelor și măsurile care decurg din ele. Bifele rămân în browserul tău; se tipărește ca PDF.">
+<meta property="og:title" content="Testul predictiv cu barem · ghid pentru învățătoare">
+<meta property="og:description" content="Testul inițial, baremul cu descriptori, centralizarea rezultatelor și planul de măsuri, pe regulile în vigoare. Gratuit, de bifat pe telefon sau tipărit.">
+<meta property="og:type" content="article">
+<style>
+:root{
+  --navy:#15305b; --blue:#2d7dd2; --yellow:#ffc83d; --paper:#f5f8fc; --tile:#e8f0fc;
+  --ink:#1b2435; --soft:#5a6982; --line:#dee6f2; --ok:#1f8a4c; --white:#fff;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 "Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif}
+a{color:var(--blue)}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 48px}
+header{background:var(--navy);color:var(--white);padding:28px 0 26px}
+header .wrap{padding-bottom:0}
+.kicker{color:var(--yellow);font-weight:700;letter-spacing:.04em;font-size:13px;text-transform:uppercase}
+h1{margin:6px 0 8px;font-size:clamp(26px,5vw,40px);line-height:1.15}
+.sub{color:#cddaf0;margin:0;font-size:17px}
+.tags{margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.tag{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:3px 11px;font-size:13px}
+.bar{position:sticky;top:0;z-index:5;background:var(--white);border-bottom:1px solid var(--line);box-shadow:0 2px 10px rgba(21,48,91,.06)}
+.bar .wrap{display:flex;align-items:center;gap:14px;padding:10px 16px;flex-wrap:wrap}
+.progress{flex:1 1 220px;display:flex;align-items:center;gap:10px;min-width:200px}
+.track{flex:1;height:10px;background:var(--tile);border-radius:999px;overflow:hidden}
+.fill{height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--ok));border-radius:999px;transition:width .25s}
+.count{font-weight:700;color:var(--navy);white-space:nowrap;font-size:14px}
+button{font:inherit;cursor:pointer;border-radius:10px;border:1px solid var(--line);background:var(--white);color:var(--navy);padding:8px 14px;font-weight:600}
+button.primary{background:var(--navy);color:var(--white);border-color:var(--navy)}
+button.danger{color:#a12d2d}
+button:focus-visible{outline:3px solid var(--yellow);outline-offset:2px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:18px 0}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:12px}
+.rule{background:var(--tile);border-radius:12px;padding:12px 14px}
+.rule b{display:block;color:var(--navy);font-size:15px}
+.rule span{color:var(--soft);font-size:14px}
+.note{color:var(--soft);font-size:14px}
+section.block{margin:26px 0}
+section.block h2{display:flex;align-items:center;gap:10px;font-size:21px;color:var(--navy);margin:0 0 4px}
+section.block h2 .n{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--yellow);color:var(--navy);font-size:17px;flex:none}
+section.block .lead{margin:0 0 12px 44px;color:var(--soft);font-size:15px}
+.who{display:inline-block;margin-left:8px;font-size:12px;font-weight:700;border-radius:999px;padding:1px 9px;vertical-align:middle;white-space:nowrap}
+.who.you{background:#fff3cc;color:#7a5a00}
+.who.me{background:var(--tile);color:var(--blue)}
+ul.list{list-style:none;margin:0;padding:0}
+ul.list li{border-bottom:1px solid var(--line)}
+ul.list li:last-child{border-bottom:0}
+label.item{display:grid;grid-template-columns:28px 1fr;gap:12px;padding:12px 6px;cursor:pointer;align-items:start}
+label.item input{width:22px;height:22px;margin:2px 0 0;accent-color:var(--blue);cursor:pointer}
+label.item .t{font-weight:600;color:var(--ink)}
+label.item .h{display:block;color:var(--soft);font-size:14px;font-weight:400;margin-top:2px}
+label.item input:checked ~ div .t{color:var(--ok)}
+label.item input:checked ~ div .t::after{content:" ✓"}
+table.proj{width:100%;border-collapse:collapse;margin-top:6px;font-size:15px}
+table.proj th{text-align:left;color:var(--soft);font-weight:600;font-size:13px;padding:6px 6px;border-bottom:2px solid var(--line)}
+table.proj td{padding:6px 6px;border-bottom:1px solid var(--line);vertical-align:middle}
+table.proj td:first-child{text-align:center;color:var(--soft);width:36px}
+table.proj th.num,table.proj td.num{width:58px;text-align:center}
+table.proj input[type=text]{width:100%;border:1px solid var(--line);border-radius:8px;padding:7px 9px;font:inherit;font-size:15px;background:var(--paper)}
+table.proj td.num input[type=text]{text-align:center;padding:7px 4px}
+table.proj input[type=text]:focus,.dates input:focus{outline:2px solid var(--blue);background:var(--white)}
+table.matrix{width:100%;border-collapse:collapse;margin-top:8px;font-size:14px}
+table.matrix th,table.matrix td{border:1px solid var(--line);padding:6px 8px;text-align:center}
+table.matrix th{background:var(--tile);color:var(--navy);font-weight:600}
+table.matrix td:first-child,table.matrix th:first-child{text-align:left}
+.crit{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:10px}
+.crit div{background:var(--tile);border-radius:12px;padding:12px 14px;font-size:14px}
+.crit b{display:block;color:var(--navy);font-size:15px;margin-bottom:4px}
+.crit ul{margin:4px 0 0 18px;padding:0;color:var(--soft)}
+.crit li{margin:2px 0}
+.lvl{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-top:10px}
+.lvl div{border-radius:12px;padding:10px 12px;font-size:14px;background:var(--tile)}
+.lvl b{display:block;font-size:17px;color:var(--navy)}
+.lvl i{display:block;font-style:normal;color:var(--soft);font-size:13px;margin-bottom:4px}
+.dates{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.dates label{display:block;background:var(--tile);border-radius:12px;padding:12px 14px}
+.dates label b{display:block;color:var(--navy);font-size:15px;margin-bottom:6px}
+.dates label small{display:block;color:var(--soft);margin-bottom:8px}
+.dates input{width:100%;border:1px solid var(--line);border-radius:8px;padding:8px 10px;font:inherit;background:var(--white)}
+.offer{background:var(--navy);color:var(--white);border-radius:16px;padding:22px 22px;margin:28px 0}
+.offer h2{margin:0 0 8px;font-size:22px}
+.offer p{margin:8px 0;color:#dbe5f5}
+.offer .price{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0}
+.offer .price div{background:rgba(255,255,255,.1);border-radius:12px;padding:10px 12px;text-align:center}
+.offer .price b{display:block;font-size:24px;color:var(--yellow)}
+.offer .price span{font-size:13px;color:#cddaf0}
+.offer .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.offer .links a{background:var(--yellow);color:var(--navy);text-decoration:none;font-weight:700;border-radius:10px;padding:10px 16px}
+.offer .links a.ghost{background:transparent;color:var(--white);border:1px solid rgba(255,255,255,.5)}
+.offer small{display:block;margin-top:12px;color:#b9c8e2;font-size:13px}
+footer{color:var(--soft);font-size:13px;line-height:1.6;border-top:1px solid var(--line);padding-top:18px;margin-top:30px}
+footer p{margin:6px 0}
+@media (max-width:560px){
+  label.item{padding:10px 2px}
+  section.block .lead{margin-left:0}
+}
+@media print{
+  @page{size:A4;margin:14mm 14mm 16mm}
+  body{background:#fff;font-size:12.5px;color:#000}
+  .wrap{max-width:none;padding:0}
+  header{background:#fff;color:#000;padding:0 0 8px;border-bottom:2px solid #000}
+  header .sub{color:#333}.kicker{color:#000}.tag{border-color:#999;color:#000;background:#fff}
+  .bar,.noprint,.offer .links{display:none !important}
+  .card,.offer{border:1px solid #999;background:#fff;color:#000}
+  .offer{break-inside:avoid;page-break-inside:avoid}
+  .offer p,.offer small,.offer .price span{color:#333}.offer .price b{color:#000}.offer h2{color:#000}
+  .rule,.crit div,.lvl div{background:#fff;border:1px solid #bbb;break-inside:avoid}
+  .lvl{grid-template-columns:repeat(4,1fr)}
+  table.matrix{break-inside:avoid}table.matrix th{background:#fff}table.matrix th,table.matrix td{border-color:#999}
+  section.block h2{break-after:avoid;page-break-after:avoid}
+  ul.list li,table.proj tr{break-inside:avoid;page-break-inside:avoid}
+  section.block h2 .n{background:#fff;border:1.5px solid #000;color:#000}
+  label.item{padding:5px 2px}
+  label.item input{-webkit-appearance:none;appearance:none;width:14px;height:14px;border:1.5px solid #000;border-radius:3px;background:#fff !important;margin-top:3px}
+  label.item input:checked ~ div .t{color:#000}label.item input:checked ~ div .t::after{content:""}
+  table.proj input[type=text],.dates input{border:0;border-bottom:1px solid #000;border-radius:0;background:#fff;color:#000;padding:3px 2px}
+  ::placeholder{color:transparent !important}
+  .who.me,.who.you{background:#fff;border:1px solid #333;color:#000}
+  a{color:#000;text-decoration:none}
+  footer{border-top:1px solid #000}
+  .print-url::after{content:" · " attr(data-url)}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="kicker">Evaluarea inițială · clasele pregătitoare – a IV-a · și pentru portofoliul de definitivat</div>
+    <h1>Testul predictiv cu barem: ghid și listă de verificare</h1>
+    <p class="sub">Ce spune legea despre calificative și catalog, cum construiești testul inițial pe competențele clasei anterioare, cum scrii baremul cu descriptori pentru FB / B / S / I, cum centralizezi rezultatele și ce măsuri decurg din ele.</p>
+    <div class="tags"><span class="tag">Legea 198/2023, art. 95–99</span><span class="tag">definitivat: OMEC 5434/2020, art. 16 și anexa 4</span><span class="tag">versiunea 1 · 7 noiembrie 2026</span></div>
+  </div>
+</header>
+
+<div class="bar noprint">
+  <div class="wrap">
+    <div class="progress" aria-live="polite"><div class="track" aria-hidden="true"><div class="fill" id="fill"></div></div><span class="count" id="count">0 / 0 bifate</span></div>
+    <button type="button" class="primary" id="print">Tipărește / salvează PDF</button>
+    <button type="button" class="danger" id="reset">Resetează bifele</button>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <div class="card">
+    <p style="margin:0 0 4px"><b>La ce folosește evaluarea inițială.</b> Testul predictiv îți arată, în primele săptămâni, ce au păstrat copiii din anul trecut și de unde pornești cu fiecare dintre ei. Nu e o notă și nu e un clasament: rezultatele lui intră în planificarea ta, în măsurile pentru clasă și în planurile individuale pentru cine are nevoie. Așa îl cere și portofoliul de definitivat: testul, baremul, rezultatele și măsurile, împreună.</p>
+    <div class="rules">
+      <div class="rule"><b>calificativele</b><span>la clasele I – a IV-a: foarte bine, bine, suficient, insuficient (Legea 198/2023, art. 96)</span></div>
+      <div class="rule"><b>clasa pregătitoare</b><span>fără note sau calificative; la finalul ei și al clasei I, raport descriptiv de evaluare (art. 99; OME 6.583/2024)</span></div>
+      <div class="rule"><b>catalogul</b><span>calificativele de la evaluarea inițială nu se consemnează în catalog; le ții în caietul tău, ca punct de plecare</span></div>
+      <div class="rule"><b>definitivat</b><span>un test predictiv cu barem, rezultatele și măsurile, în raportul de progres (art. 16); în grilă, instrumentele de evaluare valorează 1,5 puncte</span></div>
+    </div>
+    <p class="note" style="margin:12px 0 0">Legea cere ca toate evaluările să se facă pe standardele naționale de evaluare ale CNCE (art. 95–97), iar ministerul a anunțat aplicarea lor la evaluarea curentă din 2026–2027. Înainte să scrii descriptorii, verifică ce a publicat CNCE pentru disciplina și clasa ta și preia nivelurile de performanță de acolo. Bifele și câmpurile de mai jos rămân în browserul tău și nu pleacă nicăieri.</p>
+  </div>
+
+  <section class="block">
+    <h2><span class="n">1</span>Înainte de test</h2>
+    <p class="lead">Ce stabilești în prima săptămână, înainte să scrii primul item.</p>
+    <div class="card" style="padding:4px 14px">
+      <ul class="list">
+        <li><label class="item"><input type="checkbox" data-k="i-perioada"><div><span class="t">Perioada: după recapitulare, de regulă în a doua sau a treia săptămână, nu în prima zi</span><span class="h">Școala poate stabili o perioadă comună pentru evaluările inițiale (comisia pentru curriculum); întreabă. Copiii au nevoie de câteva zile de reacomodare ca testul să arate ce știu, nu cât au uitat în vacanță.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="i-programa"><div><span class="t">Competențele vizate, din programa clasei anterioare, nu din cea a clasei curente</span><span class="h">Testul măsoară ce ar trebui să stăpânească deja. La clasa I, competențele clasei pregătitoare; la a II-a, ale clasei I și așa mai departe. Scrie codurile competențelor specifice pe test.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="i-pregatitoare"><div><span class="t">La clasa pregătitoare: nu test scris, ci observare în joc și în activitățile obișnuite</span><span class="h">Inspectoratele recomandă explicit observarea și analiza produselor copiilor, fără ca ei să simtă că sunt evaluați. Instrumentul tău e o grilă de observare pe domenii, cu nivelurile din raportul de evaluare: realizat independent, realizat cu sprijin, nerealizat.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="i-clasaI"><div><span class="t">La clasa I: probe orale și practice scurte, nu o foaie cu cerințe de citit</span><span class="h">Copiii nu citesc încă. Cerințele le spui tu, una câte una; răspunsurile sunt desenate, încercuite, colorate, numărate cu obiecte. Precizările CNEE dau 15 minute pentru clasa I, 20 pentru a II-a, 25 pentru a III-a, 30 pentru a IV-a.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="i-discipline"><div><span class="t">Disciplinele: comunicare în limba română / limba și literatura română și matematică, obligatoriu; restul, după cum îți trebuie</span><span class="h">La celelalte discipline, o probă scurtă sau observarea ajunge. Pentru portofoliul de definitivat, un singur test complet, cu toate piesele, e suficient; alege disciplina la care ai cele mai bune dovezi de progres.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="i-parinti"><div><span class="t">Elevii și părinții știu dinainte: nu e notă, nu intră în catalog, nu se afișează</span><span class="h">O frază la ședința cu părinții sau în grupul clasei. Scade emoția copiilor și previne discuțiile de după.</span></div></label></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2><span class="n">2</span>Matricea de specificații</h2>
+    <p class="lead">Tabelul care garantează că testul acoperă ce trebuie, la nivelul care trebuie. Îl faci înainte de itemi, nu după.</p>
+    <div class="card">
+      <p style="margin:0 0 6px">Pe rânduri, conținuturile (sau competențele) clasei anterioare; pe coloane, nivelurile cognitive. Fiecare X devine cel puțin un item. Exemplul de mai jos este modelul CNCE pentru matematică, clasa a III-a (precizările din septembrie 2011), care poate fi adaptat la programa și la clasa ta.</p>
+      <table class="matrix">
+        <thead><tr><th>Conținuturi / niveluri</th><th>cunoaștere</th><th>înțelegere</th><th>aplicare</th></tr></thead>
+        <tbody>
+          <tr><td>numerele naturale: formare, scriere, citire, comparare, ordonare</td><td>X</td><td>X</td><td></td></tr>
+          <tr><td>adunarea și scăderea numerelor naturale</td><td></td><td></td><td>X</td></tr>
+          <tr><td>probleme care se rezolvă prin operații cunoscute</td><td></td><td>X</td><td>X</td></tr>
+          <tr><td>elemente intuitive de geometrie</td><td>X</td><td></td><td>X</td></tr>
+        </tbody>
+      </table>
+      <ul class="list" style="margin-top:10px">
+        <li><label class="item"><input type="checkbox" data-k="m-tabel"><div><span class="t">Matricea e scrisă și fiecare celulă marcată are itemul ei</span><span class="h">Patru–șase rânduri ajung la primar. Un test fără matrice are de obicei trei itemi de calcul și niciunul de înțelegere a problemei.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="m-niveluri"><div><span class="t">Itemii sunt gradați pe cele trei niveluri de performanță: suficient, bine, foarte bine</span><span class="h">Modelele CNCE pentru clasele a II-a și a III-a sunt structurate pe trei secvențe, câte una pentru fiecare nivel. Primul item al fiecărei competențe e la nivelul minim al programei, ultimul cere transfer.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="m-programa"><div><span class="t">Nimic din afara programei clasei anterioare și nimic din ce n-a fost predat efectiv anul trecut</span><span class="h">Dacă ai preluat clasa, întreabă colega ce a rămas neparcurs; nu evaluezi ce n-a fost predat.</span></div></label></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2><span class="n">3</span>Testul <span class="who me">pot ajuta</span></h2>
+    <p class="lead">Foaia pe care o primește copilul. Scrie aici disciplina și data, ca să le ai și pe hârtie.</p>
+    <div class="card">
+      <div class="dates" style="margin-bottom:12px">
+        <label><b>Disciplina și clasa</b><small>un test pe disciplină</small><input type="text" data-f="disc" placeholder="matematică, clasa a III-a"></label>
+        <label><b>Data aplicării</b><small>o scrii și pe test, și în centralizator</small><input type="text" data-f="data" placeholder="zz.ll.aaaa"></label>
+      </div>
+      <ul class="list">
+        <li><label class="item"><input type="checkbox" data-k="t-antet"><div><span class="t">Antetul: școala, clasa, disciplina, data, „Evaluare inițială”, numele elevului, timpul de lucru</span><span class="h">Sub antet, pentru tine (nu pentru copil): competențele specifice vizate, cu codurile din programa clasei anterioare, și matricea.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="t-itemi"><div><span class="t">Itemi de toate cele trei tipuri: obiectivi, semiobiectivi, subiectivi</span><span class="h">Obiectivi: alegere multiplă, adevărat/fals, împerechere. Semiobiectivi: răspuns scurt, completare de spații. Subiectivi: rezolvarea unei probleme cu plan, o compunere scurtă. Modelele CNCE le combină pe toate trei.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="t-cerinte"><div><span class="t">Cerințele, pe înțelesul copiilor: o singură acțiune pe cerință, verbe pe care le cunosc</span><span class="h">„Încercuiește”, „scrie”, „calculează”, „ordonează”. Nu „analizați și argumentați”. La clasele I–II, cerințele se citesc cu voce tare și se repetă.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="t-forma"><div><span class="t">Forma: literă mare, spațiu de scris suficient, un singur item pe rând, fără pagină înghesuită</span><span class="h">La clasa I–II, font de 14–16 puncte și imagini clare, alb-negru, care se văd și la copiator.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="t-ordine"><div><span class="t">Itemii de la ușor la greu, în ordinea nivelurilor</span><span class="h">Copilul care se oprește la jumătate a arătat măcar nivelul minim. Dacă începi cu problema, cei cu dificultăți predau foaia goală.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="t-timp"><div><span class="t">Timpul de lucru realist, probat de tine: rezolvi testul și înmulțești cu trei</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="t-ces"><div><span class="t">Varianta adaptată pentru elevii cu cerințe educaționale speciale sau cu plan individualizat</span><span class="h">Aceleași competențe, cu sprijin: cerințe mai scurte, exemple rezolvate, timp în plus, răspuns oral. Se notează pe test că e varianta adaptată.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="t-coleg"><div><span class="t">Un coleg sau o colegă citește testul înainte de tipărire</span><span class="h">Pentru greșeli de redactare și pentru cerințe cu două înțelesuri. La copii, o cerință ambiguă devine un item pe care îl pierd toți.</span></div></label></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2><span class="n">4</span>Baremul cu descriptori</h2>
+    <p class="lead">Două lucruri, scrise înainte de aplicare: baremul de corectare (ce răspuns se acceptă la fiecare item) și descriptorii de performanță (ce face copilul la fiecare nivel).</p>
+    <div class="card">
+      <div class="lvl">
+        <div><b>FB</b><i>foarte bine</i>competența realizată independent, complet și corect; rezolvă și itemul de transfer</div>
+        <div><b>B</b><i>bine</i>realizată în cea mai mare parte; greșeli mici, care nu țin de înțelegere; se corectează singur când i se atrage atenția</div>
+        <div><b>S</b><i>suficient</i>realizată la nivelul minim al programei, uneori cu sprijin; itemul de transfer nerezolvat</div>
+        <div><b>I</b><i>insuficient</i>sub nivelul minim; nu aplică procedura nici cu sprijin, sau nu abordează itemul</div>
+      </div>
+      <p class="note" style="margin:12px 0 10px"><b>Exemplu de descriptori, un item:</b> „Calculează cele patru operații de adunare și scădere în concentrul 0–1000, două fără și două cu trecere peste ordin.” FB: toate patru corecte. B: trei corecte, greșeala la trecerea peste ordin. S: cele două fără trecere peste ordin corecte. I: cel mult una corectă sau algoritmul neaplicat. Descriptorul spune ce face copilul, nu „75 % din punctaj”.</p>
+      <ul class="list">
+        <li><label class="item"><input type="checkbox" data-k="b-corectare"><div><span class="t">Baremul de corectare: răspunsul așteptat la fiecare item și ce variante se acceptă</span><span class="h">La itemii subiectivi (problema, compunerea), criteriile: planul corect, calculul corect, răspunsul formulat; textul pe temă, propoziții corecte, ortografia. Așa corectezi la fel și al douăzecilea test.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="b-descriptori"><div><span class="t">Descriptorii pentru FB / B / S / I, pe fiecare competență sau item, în comportamente observabile</span><span class="h">Pornești de la nivelurile de performanță din standardele de evaluare, dacă există pentru disciplina ta; altfel, de la descriptorii de performanță ai programei. Niciun descriptor nu conține procente.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="b-conversie"><div><span class="t">Dacă folosești punctaje, regula de transformare în calificativ e scrisă în barem înainte de aplicare și e aceeași pentru toți</span><span class="h">Punctajul e un ajutor la corectare, nu înlocuiește descriptorul. Calificativul pe test rezultă din nivelul atins la majoritatea competențelor, nu din suma punctelor.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="b-pregatitoare"><div><span class="t">La clasa pregătitoare: nu calificative, ci grila cu nivelurile raportului de evaluare, pe domenii</span><span class="h">Realizat independent, realizat cu sprijin, nerealizat, pe competențele din programă (comunicare, matematică și explorarea mediului, dezvoltare personală). Aceleași etichete ca în raportul din mai, ca să vezi progresul.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="b-standarde"><div><span class="t">Ai verificat ce standarde naționale de evaluare a publicat CNCE pentru disciplina și clasa ta</span><span class="h">Legea 198/2023 le face obligatorii pentru toate evaluările, iar respectarea lor e controlată prin inspecție. Dacă există, nivelurile tale de performanță sunt ale lor.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="b-semnat"><div><span class="t">Baremul e datat, semnat și tipărit împreună cu testul, înainte de aplicare</span><span class="h">Pentru portofoliu și pentru inspecție, data baremului anterioară aplicării arată că ai evaluat pe criterii, nu după rezultate.</span></div></label></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2><span class="n">5</span>Aplicarea și corectarea</h2>
+    <p class="lead">Condiții egale pentru toți și feedback care ajută, nu care etichetează.</p>
+    <div class="card" style="padding:4px 14px">
+      <ul class="list">
+        <li><label class="item"><input type="checkbox" data-k="a-conditii"><div><span class="t">Aceeași oră a zilei pentru toți, timpul anunțat, cerințele citite și explicate o dată</span><span class="h">Nu la ultima oră de vineri. Fără ajutor la rezolvare în timpul lucrului, dar cu răspuns la „ce înseamnă cuvântul ăsta?”.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="a-barem"><div><span class="t">Corectezi strict pe barem, toate testele la același item odată</span><span class="h">Item cu item, nu test cu test: ești mai consecventă și vezi imediat greșelile frecvente ale clasei.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="a-feedback"><div><span class="t">Fiecare copil primește testul înapoi cu două rânduri scrise: ce a reușit, ce exersăm</span><span class="h">„Scrii corect numerele până la 1000; exersăm scăderea cu împrumut.” Calificativul singur nu îi spune nimic unui copil de 8 ani.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="a-afisare"><div><span class="t">Fără clasament, fără listă afișată, fără citirea rezultatelor în fața clasei</span><span class="h">Ministerul recomandă explicit ca evaluarea să nu provoace emoții negative și copiii să nu fie comparați. Rezultatul fiecărui copil e o informație pentru tine și pentru părinții lui.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="a-parinti"><div><span class="t">Părinților: individual, cu testul în față, cu accent pe ce urmează</span><span class="h">Nu în grupul clasei, nu cu rezultatele altora. Pentru copiii cu dificultăți, discuția de acum pregătește planul individualizat.</span></div></label></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2><span class="n">6</span>Centralizarea rezultatelor</h2>
+    <p class="lead">Un tabel pe clasă, pe competențe, nu doar o coloană de calificative. Completează aici pe scurt, pentru disciplina de mai sus.</p>
+    <div class="card">
+      <table class="proj">
+        <thead><tr><th>#</th><th>competența vizată</th><th class="num">FB</th><th class="num">B</th><th class="num">S</th><th class="num">I</th></tr></thead>
+        <tbody id="central"></tbody>
+      </table>
+      <p class="note" style="margin:8px 0 6px">În fiecare căsuță, câți copii au atins nivelul la competența respectivă. Centralizatorul complet, cu elevii pe rânduri (inițiale sau numere, nu nume) și itemii pe coloane, îl ții în caietul învățătorului.</p>
+      <ul class="list">
+        <li><label class="item"><input type="checkbox" data-k="c-tabel"><div><span class="t">Tabelul elevi × itemi e completat, cu nivelul la fiecare item și calificativul pe test</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="c-competente"><div><span class="t">Pe fiecare competență: câți FB, B, S, I în clasă</span><span class="h">De aici vezi diferența dintre o competență slabă la toată clasa (o reiei frontal, în planificare) și trei copii cu dificultăți generale (sprijin individual).</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="c-greseli"><div><span class="t">Greșelile frecvente, notate în cuvinte: ce anume greșesc, nu doar unde</span><span class="h">„Scad unitățile mai mari din cele mai mici” spune ce ai de predat; „item 3: 40 % greșit” nu spune nimic.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="c-concluzii"><div><span class="t">Trei propoziții de interpretare: ce stăpânește clasa, ce lipsește, cine are nevoie de sprijin individual</span><span class="h">Acestea sunt „rezultatele testării și observațiile/concluziile” din grila portofoliului de definitivat.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="c-caiet"><div><span class="t">Calificativele sunt trecute în caietul învățătorului sau în catalogul profesorului, nu în catalogul clasei</span></div></label></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2><span class="n">7</span>Măsurile <span class="who me">pot ajuta</span></h2>
+    <p class="lead">Planul de acțiune scris: pe clasă, pe grupe, pe copil. Fără el, testul a fost doar o oră pierdută.</p>
+    <div class="card" style="padding:4px 14px">
+      <ul class="list">
+        <li><label class="item"><input type="checkbox" data-k="r-planificare"><div><span class="t">Pe clasă: competențele slabe reluate în planificare, în unitățile următoare, nu într-o „săptămână de recuperare” care nu încape</span><span class="h">Două–trei ore în plus la unitatea care le atinge, exerciții de încălzire la începutul lecțiilor, o lecție de consolidare înainte de prima evaluare sumativă. Modificarea se vede în planificarea anuală și în proiectarea unității.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="r-grupe"><div><span class="t">Pe grupe: sarcini diferențiate pe trei niveluri, în fișele de lucru obișnuite</span><span class="h">Grupa S primește exercițiul de bază cu model; grupa FB primește extensia. Nu grupe fixe pe tot anul: le refaci după fiecare evaluare.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="r-individual"><div><span class="t">Pe copil: plan individualizat de învățare pentru cine e la I, cu obiective, activități, termen</span><span class="h">Legea leagă planurile individuale de nivelurile din standardele de evaluare (art. 97). Două–trei obiective concrete pe șase săptămâni, nu o listă de competențe copiată din programă.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="r-remediale"><div><span class="t">Orele remediale din orar, dacă școala le are, primesc copiii și conținuturile din plan</span><span class="h">Cu lista copiilor și cu competențele vizate, scrise. Așa dovedești la inspecție legătura dintre test și ce faci la remediale.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="r-reevaluare"><div><span class="t">Termen de reevaluare: o probă formativă scurtă, pe aceleași competențe, după 4–6 săptămâni</span><span class="h">Comparația „test inițial → probă formativă” e dovada de progres pentru raportul de progres școlar.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="r-document"><div><span class="t">Documentul scris, o pagină: rezultatele, concluziile, măsurile, termenele, data, semnătura</span><span class="h">„Măsurile / planul de acțiune” din grila portofoliului. O pagină clară valorează mai mult decât zece de statistică.</span></div></label></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2><span class="n">8</span>Pentru portofoliul de definitivat</h2>
+    <p class="lead">Dacă dai definitivatul, instrumentele de evaluare sunt o piesă a raportului de progres (art. 16) și valorează 1,5 puncte în grila din anexa 4. Ce pui în dosar:</p>
+    <div class="card" style="padding:4px 14px">
+      <ul class="list">
+        <li><label class="item"><input type="checkbox" data-k="d-test"><div><span class="t">Testul, în forma dată copiilor, cu antetul complet și competențele vizate</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="d-barem"><div><span class="t">Baremul de corectare și descriptorii de performanță, datate înainte de aplicare</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="d-rezultate"><div><span class="t">Centralizatorul și interpretarea, fără numele elevilor</span><span class="h">Inițiale sau numere de ordine. Dosarul circulă prin comisie și prin inspectorat; datele copiilor nu au ce căuta acolo.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="d-masuri"><div><span class="t">Planul de măsuri și, dacă ai apucat, dovada reevaluării</span><span class="h">Testul inițial din septembrie și proba formativă din noiembrie, una lângă alta, sunt cel mai bun argument pentru progres la a doua inspecție.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="d-lista"><div><span class="t">Restul portofoliului e bifat pe lista dedicată</span><span class="h">Vezi <a href="../portofoliu-definitivat/">lista de verificare a portofoliului de definitivat</a>: CV, scrisoarea, planificările, cele 10 proiecte, catalogul, autoevaluarea, termenele din 2027.</span></div></label></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2><span class="n">9</span>Termenele tale</h2>
+    <p class="lead">Scrie-le aici, ca să le ai și pe hârtie.</p>
+    <div class="card">
+      <div class="dates">
+        <label><b>Reevaluarea</b><small>proba formativă pe aceleași competențe, peste 4–6 săptămâni</small><input type="text" data-f="reeval" placeholder="zz.ll.aaaa"></label>
+        <label><b>Discuția cu părinții copiilor cu plan individualizat</b><small>individual, cu testul în față</small><input type="text" data-f="parinti" placeholder="zz.ll.aaaa"></label>
+      </div>
+    </div>
+  </section>
+
+  <div class="offer">
+    <h2>Unde te pot ajuta</h2>
+    <p>Testul, baremul și interpretarea sunt ale tale: tu îți cunoști copiii. Eu pot genera, pe datele tale, documentele în care intră măsurile: planificarea anuală și proiectarea unităților, refăcute cu orele de consolidare acolo unde testul a arătat lipsuri, și proiectele de lecție de recapitulare sau de evaluare, cu fișele diferențiate pe trei niveluri ca anexe. Le verific înainte să ți le trimit; tu le adaptezi, le semnezi și le susții la clasă.</p>
+    <div class="price">
+      <div><b>100 lei</b><span>o disciplină · planificarea și proiectarea unităților pe tot anul</span></div>
+      <div><b>350 / 550 / 750</b><span>toate disciplinele clasei · 5 / 7 / 9 discipline</span></div>
+      <div><b>100 lei</b><span>un proiect de lecție cu anexe</span></div>
+    </div>
+    <p>Preview înainte de plată, Word editabil, factură. Planificarea anuală e gratuită în perioada de lansare.</p>
+    <div class="links">
+      <a href="https://tally.so/r/jeeDRQ" rel="noopener">Formularul de comandă</a>
+      <a class="ghost" href="https://www.facebook.com/planificari.rapide" rel="noopener">Scrie-mi pe Pagină</a>
+      <a class="ghost" href="https://docs.google.com/document/d/1-TQOi2HD4wi0TaN-aSK8SiIr4sXjlGpnjjo1esRKAwg/edit?usp=sharing" rel="noopener">Termenii și condițiile</a>
+    </div>
+    <small class="print-url" data-url="facebook.com/planificari.rapide">Documentele sunt generate pe datele tale și verificate de mine; nu sunt avizate de nicio autoritate și nu garantează nota. Evaluarea copiilor tăi o faci tu, iar nota la examen o dă comisia.</small>
+  </div>
+
+  <footer>
+    <p><b>Surse:</b> Legea învățământului preuniversitar nr. 198/2023 (art. 95–97, standardele naționale de evaluare; art. 96, calificativele și clasa pregătitoare; art. 99, raportul descriptiv de evaluare la finalul clasei pregătitoare și al clasei I); OME 6.583/2024, metodologia raportului de evaluare (nivelurile nerealizată / realizată cu sprijin / realizată independent, completat în mai); Regulamentul-cadru de organizare și funcționare a unităților de învățământ preuniversitar (OME 5.726/2024, cu modificările ulterioare), pentru evaluarea curentă și catalog; pentru definitivat, metodologia aprobată prin OMEC 5434/2020, cu modificările ulterioare (art. 16, anexa 4); precizările CNEE din septembrie 2011 privind evaluarea inițială la matematică în învățământul primar (matricele de specificații, timpii de lucru, structura pe trei niveluri); scrisorile metodice ale inspectoratelor pentru învățământul primar (de exemplu ISJ Neamț, 2024–2025: calificativele de la evaluările inițiale nu se consemnează în catalog; la clasa pregătitoare, observare, nu teste scrise). Verifică și precizările inspectoratului tău și standardele publicate de CNCE pentru disciplina ta.</p>
+    <p><b>Confidențialitate:</b> pagina nu folosește cookie-uri, nu trimite date nicăieri și nu te urmărește. Bifele și datele introduse stau în browserul tău (localStorage) și le ștergi cu „Resetează bifele”. PDF-ul îl salvezi din butonul „Tipărește / salvează PDF” (alege „Salvează ca PDF” la imprimantă). Nu scrie aici numele elevilor.</p>
+    <p><b>Operator:</b> BOSNEANU ALEXANDRU-CONSTANTIN PERSOANĂ FIZICĂ AUTORIZATĂ · CUI 54398356 · ORC F2026017444000 · București · <a href="mailto:acbosneanu@gmail.com">acbosneanu@gmail.com</a> · Pagina „Planificări și Proiectări Rapide”. Ghidul e gratuit și poate fi distribuit nemodificat, cu această sursă. Versiunea 1, 7 noiembrie 2026. Vezi și <a href="../portofoliu-definitivat/">lista pentru portofoliul de definitivat</a> și <a href="../ziua-inspectiei/">lista pentru ziua inspecției</a>.</p>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var KEY='ppr-testul-predictiv-v1';
+  var state={c:{},f:{}};
+  try{var raw=localStorage.getItem(KEY);if(raw){state=JSON.parse(raw)||state;state.c=state.c||{};state.f=state.f||{};}}catch(e){}
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}}
+
+  var tb=document.getElementById('central');
+  var lv=['fb','b','s','i'],ln=['FB','B','S','I'];
+  for(var i=1;i<=5;i++){
+    var tr=document.createElement('tr'),h='<td>'+i+'</td><td><input type="text" data-f="c'+i+'" placeholder="competența" aria-label="competența '+i+'"></td>';
+    for(var j=0;j<4;j++){h+='<td class="num"><input type="text" data-f="c'+i+lv[j]+'" inputmode="numeric" aria-label="'+ln[j]+' la competența '+i+'"></td>';}
+    tr.innerHTML=h;tb.appendChild(tr);
+  }
+
+  var checks=Array.prototype.slice.call(document.querySelectorAll('input[type=checkbox][data-k]'));
+  var fields=Array.prototype.slice.call(document.querySelectorAll('input[data-f]'));
+  var fill=document.getElementById('fill'),count=document.getElementById('count');
+
+  function render(){
+    var done=checks.filter(function(c){return c.checked;}).length;
+    count.textContent=done+' / '+checks.length+' bifate';
+    fill.style.width=(checks.length?Math.round(done*100/checks.length):0)+'%';
+  }
+  checks.forEach(function(c){
+    c.checked=!!state.c[c.getAttribute('data-k')];
+    c.addEventListener('change',function(){state.c[c.getAttribute('data-k')]=c.checked;save();render();});
+  });
+  fields.forEach(function(f){
+    var k=f.getAttribute('data-f');if(state.f[k])f.value=state.f[k];
+    f.addEventListener('input',function(){state.f[k]=f.value;save();});
+  });
+  render();
+
+  document.getElementById('print').addEventListener('click',function(){window.print();});
+  var reset=document.getElementById('reset'),armed=false,timer;
+  reset.addEventListener('click',function(){
+    if(!armed){armed=true;reset.textContent='Sigur? Apasă din nou';clearTimeout(timer);timer=setTimeout(function(){armed=false;reset.textContent='Resetează bifele';},4000);return;}
+    state={c:{},f:{}};save();
+    checks.forEach(function(c){c.checked=false;});fields.forEach(function(f){f.value='';});
+    armed=false;reset.textContent='Resetează bifele';render();
+  });
+})();
+</script>
+</body>
+</html>

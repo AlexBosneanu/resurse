@@ -12,6 +12,7 @@ colectează emailuri (decizia din 7.11.2026: butonul de PDF din pagină face inu
 |---|---|---|---|
 | Portofoliul de definitivat 2027 | `portofoliu-definitivat/` | `portofoliu-definitivat/portofoliu-definitivat-2027.pdf` | 1 · 7.11.2026 |
 | Ziua inspecției de specialitate | `ziua-inspectiei/` | `ziua-inspectiei/ziua-inspectiei.pdf` | 1 · 7.11.2026 |
+| Testul predictiv cu barem (evaluarea inițială) | `testul-predictiv/` | `testul-predictiv/testul-predictiv.pdf` | 1 · 7.11.2026 |
 
 ## Cum regenerezi PDF-ul (Windows, Edge instalat)
 
