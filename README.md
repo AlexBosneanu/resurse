@@ -5,8 +5,8 @@ pentru Pagina de Facebook „Planificări și Proiectări Rapide”.
 
 Fiecare resursă e un singur fișier `index.html`, fără librării și fără cereri externe:
 bifele și câmpurile stau în `localStorage`, iar tipărirea (Ctrl+P) dă PDF-ul. Lângă
-fiecare pagină stă și PDF-ul generat, pentru distribuire și pentru formularul Tally
-care îl deschide după ce cineva își lasă adresa de email.
+fiecare pagină stă și PDF-ul generat, pentru distribuire directă în grupuri. Nu se
+colectează emailuri (decizia din 7.11.2026: butonul de PDF din pagină face inutilă o poartă).
 
 | Resursă | Pagina | PDF | Versiunea |
 |---|---|---|---|
