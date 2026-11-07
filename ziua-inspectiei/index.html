@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ziua inspecției de specialitate · lista de verificare pentru învățătoare</title>
+<meta name="description" content="Lista de verificare pentru ziua inspecției de specialitate la definitivat, gradul II și gradul I (cele 4 activități didactice) și pentru inspecția la clasă de la titularizare: ce verifică metodistul, ce documente ai pe catedră, cum arată proiectul fiecărei lecții, discuția finală. Bifele rămân în browserul tău; se tipărește ca PDF.">
+<meta property="og:title" content="Ziua inspecției de specialitate · lista de verificare">
+<meta property="og:description" content="Cele 4 lecții asistate, documentele de pe catedră, criteriile din fișa de evaluare și discuția finală. Gratuit, de bifat pe telefon sau tipărit.">
+<meta property="og:type" content="article">
+<style>
+:root{
+  --navy:#15305b; --blue:#2d7dd2; --yellow:#ffc83d; --paper:#f5f8fc; --tile:#e8f0fc;
+  --ink:#1b2435; --soft:#5a6982; --line:#dee6f2; --ok:#1f8a4c; --white:#fff;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 "Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif}
+a{color:var(--blue)}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 48px}
+header{background:var(--navy);color:var(--white);padding:28px 0 26px}
+header .wrap{padding-bottom:0}
+.kicker{color:var(--yellow);font-weight:700;letter-spacing:.04em;font-size:13px;text-transform:uppercase}
+h1{margin:6px 0 8px;font-size:clamp(26px,5vw,40px);line-height:1.15}
+.sub{color:#cddaf0;margin:0;font-size:17px}
+.tags{margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.tag{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:3px 11px;font-size:13px}
+.bar{position:sticky;top:0;z-index:5;background:var(--white);border-bottom:1px solid var(--line);box-shadow:0 2px 10px rgba(21,48,91,.06)}
+.bar .wrap{display:flex;align-items:center;gap:14px;padding:10px 16px;flex-wrap:wrap}
+.progress{flex:1 1 220px;display:flex;align-items:center;gap:10px;min-width:200px}
+.track{flex:1;height:10px;background:var(--tile);border-radius:999px;overflow:hidden}
+.fill{height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--ok));border-radius:999px;transition:width .25s}
+.count{font-weight:700;color:var(--navy);white-space:nowrap;font-size:14px}
+button{font:inherit;cursor:pointer;border-radius:10px;border:1px solid var(--line);background:var(--white);color:var(--navy);padding:8px 14px;font-weight:600}
+button.primary{background:var(--navy);color:var(--white);border-color:var(--navy)}
+button.danger{color:#a12d2d}
+button:focus-visible{outline:3px solid var(--yellow);outline-offset:2px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:18px 0}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:12px}
+.rule{background:var(--tile);border-radius:12px;padding:12px 14px}
+.rule b{display:block;color:var(--navy);font-size:15px}
+.rule span{color:var(--soft);font-size:14px}
+.note{color:var(--soft);font-size:14px}
+section.block{margin:26px 0}
+section.block h2{display:flex;align-items:center;gap:10px;font-size:21px;color:var(--navy);margin:0 0 4px}
+section.block h2 .n{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--yellow);color:var(--navy);font-size:17px;flex:none}
+section.block .lead{margin:0 0 12px 44px;color:var(--soft);font-size:15px}
+.who{display:inline-block;margin-left:8px;font-size:12px;font-weight:700;border-radius:999px;padding:1px 9px;vertical-align:middle;white-space:nowrap}
+.who.you{background:#fff3cc;color:#7a5a00}
+.who.me{background:var(--tile);color:var(--blue)}
+ul.list{list-style:none;margin:0;padding:0}
+ul.list li{border-bottom:1px solid var(--line)}
+ul.list li:last-child{border-bottom:0}
+label.item{display:grid;grid-template-columns:28px 1fr;gap:12px;padding:12px 6px;cursor:pointer;align-items:start}
+label.item input{width:22px;height:22px;margin:2px 0 0;accent-color:var(--blue);cursor:pointer}
+label.item .t{font-weight:600;color:var(--ink)}
+label.item .h{display:block;color:var(--soft);font-size:14px;font-weight:400;margin-top:2px}
+label.item input:checked ~ div .t{color:var(--ok)}
+label.item input:checked ~ div .t::after{content:" ✓"}
+table.proj{width:100%;border-collapse:collapse;margin-top:6px;font-size:15px}
+table.proj th{text-align:left;color:var(--soft);font-weight:600;font-size:13px;padding:6px 6px;border-bottom:2px solid var(--line)}
+table.proj td{padding:6px 6px;border-bottom:1px solid var(--line);vertical-align:middle}
+table.proj td:first-child{text-align:center;color:var(--soft);width:36px}
+table.proj input[type=checkbox]{width:22px;height:22px;accent-color:var(--blue)}
+table.proj input[type=text]{width:100%;border:1px solid var(--line);border-radius:8px;padding:7px 9px;font:inherit;font-size:15px;background:var(--paper)}
+table.proj input[type=text]:focus,.dates input:focus{outline:2px solid var(--blue);background:var(--white)}
+.crit{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:10px}
+.crit div{background:var(--tile);border-radius:12px;padding:12px 14px;font-size:14px}
+.crit b{display:block;color:var(--navy);font-size:15px;margin-bottom:4px}
+.crit ul{margin:4px 0 0 18px;padding:0;color:var(--soft)}
+.crit li{margin:2px 0}
+.dates{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.dates label{display:block;background:var(--tile);border-radius:12px;padding:12px 14px}
+.dates label b{display:block;color:var(--navy);font-size:15px;margin-bottom:6px}
+.dates label small{display:block;color:var(--soft);margin-bottom:8px}
+.dates input{width:100%;border:1px solid var(--line);border-radius:8px;padding:8px 10px;font:inherit;background:var(--white)}
+.offer{background:var(--navy);color:var(--white);border-radius:16px;padding:22px 22px;margin:28px 0}
+.offer h2{margin:0 0 8px;font-size:22px}
+.offer p{margin:8px 0;color:#dbe5f5}
+.offer .price{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0}
+.offer .price div{background:rgba(255,255,255,.1);border-radius:12px;padding:10px 12px;text-align:center}
+.offer .price b{display:block;font-size:24px;color:var(--yellow)}
+.offer .price span{font-size:13px;color:#cddaf0}
+.offer .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.offer .links a{background:var(--yellow);color:var(--navy);text-decoration:none;font-weight:700;border-radius:10px;padding:10px 16px}
+.offer .links a.ghost{background:transparent;color:var(--white);border:1px solid rgba(255,255,255,.5)}
+.offer small{display:block;margin-top:12px;color:#b9c8e2;font-size:13px}
+footer{color:var(--soft);font-size:13px;line-height:1.6;border-top:1px solid var(--line);padding-top:18px;margin-top:30px}
+footer p{margin:6px 0}
+@media (max-width:560px){
+  label.item{padding:10px 2px}
+  section.block .lead{margin-left:0}
+}
+@media print{
+  @page{size:A4;margin:14mm 14mm 16mm}
+  body{background:#fff;font-size:12.5px;color:#000}
+  .wrap{max-width:none;padding:0}
+  header{background:#fff;color:#000;padding:0 0 8px;border-bottom:2px solid #000}
+  header .sub{color:#333}.kicker{color:#000}.tag{border-color:#999;color:#000;background:#fff}
+  .bar,.noprint,.offer .links{display:none !important}
+  .card,.offer{border:1px solid #999;background:#fff;color:#000}
+  .offer{break-inside:avoid;page-break-inside:avoid}
+  .offer p,.offer small,.offer .price span{color:#333}.offer .price b{color:#000}.offer h2{color:#000}
+  .rule,.crit div{background:#fff;border:1px solid #bbb;break-inside:avoid}
+  section.block h2{break-after:avoid;page-break-after:avoid}
+  ul.list li,table.proj tr{break-inside:avoid;page-break-inside:avoid}
+  section.block h2 .n{background:#fff;border:1.5px solid #000;color:#000}
+  label.item{padding:5px 2px}
+  label.item input,table.proj input[type=checkbox]{-webkit-appearance:none;appearance:none;width:14px;height:14px;border:1.5px solid #000;border-radius:3px;background:#fff !important;margin-top:3px}
+  label.item input:checked ~ div .t{color:#000}label.item input:checked ~ div .t::after{content:""}
+  table.proj input[type=text],.dates input{border:0;border-bottom:1px solid #000;border-radius:0;background:#fff;color:#000;padding:3px 2px}
+  ::placeholder{color:transparent !important}
+  .who.me,.who.you{background:#fff;border:1px solid #333;color:#000}
+  a{color:#000;text-decoration:none}
+  footer{border-top:1px solid #000}
+  .print-url::after{content:" · " attr(data-url)}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="kicker">Definitivat · gradul II · gradul I · titularizare · clasele pregătitoare – a IV-a</div>
+    <h1>Ziua inspecției de specialitate: lista de verificare</h1>
+    <p class="sub">Cele 4 activități didactice asistate în aceeași zi (la titularizare, o singură lecție): ce verifică metodistul, ce ai pe catedră, cum arată proiectul fiecărei lecții și cum decurge discuția de la final.</p>
+    <div class="tags"><span class="tag">definitivat: OMEC 5434/2020, art. 15 și anexa 2</span><span class="tag">grade: fișele din OME 4151/2022</span><span class="tag">versiunea 1 · 7 noiembrie 2026</span></div>
+  </div>
+</header>
+
+<div class="bar noprint">
+  <div class="wrap">
+    <div class="progress" aria-live="polite"><div class="track" aria-hidden="true"><div class="fill" id="fill"></div></div><span class="count" id="count">0 / 0 bifate</span></div>
+    <button type="button" class="primary" id="print">Tipărește / salvează PDF</button>
+    <button type="button" class="danger" id="reset">Resetează bifele</button>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <div class="card">
+    <p style="margin:0 0 4px"><b>Ce se întâmplă în ziua inspecției.</b> Inspectorul sau metodistul asistă la 4 activități didactice, de obicei în aceeași zi, pe orarul tău obișnuit. La fiecare completează fișa de observare, iar la final se face analiza activității: pornește de la autoevaluarea ta, continuă cu observațiile lui și se încheie cu nota, care nu poate fi contestată. Primești o copie a fișelor. La definitivat, a doua inspecție este și ziua în care se evaluează portofoliul.</p>
+    <div class="rules">
+      <div class="rule"><b>definitivat</b><span>2 inspecții × 4 activități, notă 1–10; media cu portofoliul ≥ 8, minimum 7 la fiecare</span></div>
+      <div class="rule"><b>gradul II</b><span>inspecția specială, 4 activități, notă minimă 8</span></div>
+      <div class="rule"><b>gradul I</b><span>inspecția specială, 4 activități, notă minimă 8, în ziua susținerii lucrării</span></div>
+      <div class="rule"><b>titularizare</b><span>inspecția specială la clasă: o lecție, notă minimă 7 pentru titularizare</span></div>
+    </div>
+    <p class="note" style="margin:12px 0 0">Bifele și câmpurile de mai jos rămân în browserul tău și nu pleacă nicăieri. Dacă tipărești, căsuțele ies goale, ca să bifezi pe hârtie.</p>
+  </div>
+
+  <section class="block">
+    <h2><span class="n">1</span>Cu două săptămâni înainte</h2>
+    <p class="lead">Lucrurile care nu se mai pot repara în ultima zi.</p>
+    <div class="card" style="padding:4px 14px">
+      <ul class="list">
+        <li><label class="item"><input type="checkbox" data-k="grafic"><div><span class="t">Data, ora de început și numele metodistului, din graficul inspectoratului</span><span class="h">Graficul apare pe site-ul ISJ (la definitivat, de regulă în noiembrie–decembrie și în aprilie–mai; la titularizare, la sfârșitul lui mai). Confirmă cu responsabilul cu perfecționarea din școală.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="orar"><div><span class="t">Cele 4 lecții alese, pe orarul real al zilei</span><span class="h">Discipline diferite, tipuri de lecție diferite (predare, consolidare, recapitulare, evaluare, mixtă). Lecțiile trebuie să fie exact unde cad în planificare în săptămâna aceea, nu teme „frumoase” aduse din altă parte.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="model"><div><span class="t">Modelul de proiect cerut de metodist sau de școală, dacă există</span><span class="h">Unii metodiști cer o structură anume (rubrici, antet, forma scenariului). Întreabă din timp; un model primit cu o zi înainte strică tot.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="director"><div><span class="t">Directorul și colegii știu de inspecție</span><span class="h">Sala, orarul zilei, pauzele, cine te înlocuiește la serviciul pe școală. La definitivat, directorul participă la evaluarea portofoliului.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="planif"><div><span class="t">Planificarea anuală și proiectarea unităților, la zi, la toate disciplinele din ziua inspecției</span><span class="h">Metodistul deschide planificarea și caută lecția zilei. Dacă ora din proiect nu e ora din planificare, prima întrebare e asta.</span></div></label></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2><span class="n">2</span>Proiectul fiecărei lecții <span class="who me">pot ajuta</span></h2>
+    <p class="lead">Patru proiecte complete, în același format, fiecare cu anexele lui. Bifezi tabelul pe măsură ce le termini.</p>
+    <div class="card">
+      <table class="proj">
+        <thead><tr><th>#</th><th>gata</th><th>ora · disciplina</th><th>subiectul și tipul lecției</th></tr></thead>
+        <tbody id="proj"></tbody>
+      </table>
+      <p class="note" style="margin:10px 0 6px"><b>Ce verific la fiecare proiect:</b></p>
+      <ul class="list">
+        <li><label class="item"><input type="checkbox" data-k="p-antet"><div><span class="t">Antetul complet și corect</span><span class="h">Școala, data, clasa, disciplina, unitatea de învățare, subiectul, tipul lecției, competențele specifice din programa în vigoare (cu codurile), obiectivele operaționale, strategiile (metode, mijloace, forme de organizare), resursele de timp și bibliografia.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="p-obiective"><div><span class="t">Obiectivele operaționale, cu verbe observabile și criteriu minim de performanță</span><span class="h">„Să identifice”, „să ordoneze”, „să rezolve”, nu „să știe”, „să înțeleagă”, „să cunoască”. Fiecare obiectiv se regăsește într-o activitate și într-un item de evaluare.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="p-etape"><div><span class="t">Etapele potrivite tipului de lecție, cu timpii care dau 45 (sau 50) de minute</span><span class="h">O lecție de evaluare nu are „dirijarea învățării”; una de predare are „obținerea performanței”. Momentul organizatoric nu ia 10 minute.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="p-activ"><div><span class="t">Activitățile elevilor descrise concret, nu „elevii rezolvă exercițiile”</span><span class="h">Ce fac ei, ce faci tu, ce material folosesc, în ce formă de organizare (frontal, în perechi, pe grupe), cu ce diferențiere pentru cei rapizi și pentru cei care au nevoie de sprijin.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="p-eval"><div><span class="t">Evaluarea lecției: ce, cum, cu ce instrument</span><span class="h">Observare sistematică, fișă de lucru, probă scurtă, autoevaluare. Fișa de evaluare a lecției cere tehnici variate și feedback personalizat; scrie-le în proiect și fă-le la oră.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="p-anexe"><div><span class="t">Anexele, tipărite în numărul necesar</span><span class="h">Fișa de lucru, fișa de evaluare, materialul pentru grupe, planșele; câte una în plus pentru metodist. Paginile din manual și din caiet, notate în proiect.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="p-digital"><div><span class="t">Un moment cu resurse digitale, acolo unde are sens</span><span class="h">Fișele de evaluare (și la definitivat, și la grade) punctează explicit dispozitivele și resursele digitale. Un filmuleț scurt, o aplicație, o prezentare: ceva real, testat pe echipamentul din clasă.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="p-viata"><div><span class="t">Legătura cu viața reală și cu alte discipline, spusă explicit</span><span class="h">Criteriu în ambele fișe: „relevanța pentru viață a conținuturilor”, „aplicabilitatea în viața reală”. O frază în proiect și una la oră.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="p-exemplare"><div><span class="t">Două exemplare tipărite din fiecare proiect: unul pentru metodist, unul pentru tine</span><span class="h">Semnate, în ordinea orelor, într-un dosar cu șină. Și varianta electronică pe telefon, pentru orice.</span></div></label></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2><span class="n">3</span>Ce urmărește fișa de evaluare</h2>
+    <p class="lead">Nu scrii proiectul pentru fișă, dar e bine să știi ce bifează metodistul în timp ce predai.</p>
+    <div class="card">
+      <div class="crit">
+        <div><b>Definitivat: fișa de evaluare 2 (anexa 2), 10 criterii × 1 punct</b>
+          <ul>
+            <li>aspecte formale: documente, materiale, resurse digitale disponibile</li>
+            <li>proiectare și motivare: legături intra- și interdisciplinare, locul în unitate, relevanța pentru viață</li>
+            <li>conținut științific și aplicativ: structurat, coerent, corect</li>
+            <li>metode și mijloace: varietate, oportunitate, eficiență; activități cu dispozitive sau resurse digitale</li>
+            <li>climat psihopedagogic: ambient, motivația pentru lecție</li>
+            <li>elevii: achiziții cognitive; deprinderi de lucru individual și în echipă; atitudinea față de școală (colaborator, nu spectator)</li>
+            <li>tu: competențe profesionale și metodice (comunicare, captarea interesului, diferențiere, resurse suplimentare, evaluare cu tehnologie); competențe sociale și de personalitate</li>
+          </ul>
+        </div>
+        <div><b>Gradul II și gradul I: fișa nouă, 5 domenii</b>
+          <ul>
+            <li>proiectare curriculară, 20 p: documente curriculare respectate, obiective clare, experiențe de învățare înlănțuite, resurse alese responsabil (inclusiv digitale, cu drepturi de autor)</li>
+            <li>predare și facilitarea învățării, 25 p: experiențele anterioare ale elevilor, corectitudine științifică, accesibilizare, limbaj de specialitate, resurse variate, strategii interactive, organizarea clasei după obiective, aplicabilitate în viață, dispozitive digitale, resurse suplimentare</li>
+            <li>feedback și evaluarea învățării, 20 p: tehnici și instrumente variate, feedback personalizat și sprijin diferențiat, elevii interpretează rezultatele, tehnologie în evaluare</li>
+            <li>mediu și climat educațional, 15 p: participarea tuturor într-o atmosferă sigură, valorizarea produselor elevilor, managementul clasei, comunicare și respect</li>
+            <li>autoevaluarea activității, 5 p: reflecție asupra lecției și asupra impactului ei; plus 15 p în raportul scris al inspecției</li>
+          </ul>
+        </div>
+      </div>
+      <p class="note" style="margin:12px 0 0">Fișele complete, cu formularea exactă, sunt în anexele ordinelor citate în subsol; inspectoratele le publică și la secțiunea de perfecționare. La titularizare, fișa e cea din metodologia de mobilitate a anului respectiv.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2><span class="n">4</span>Pe catedră, în ziua inspecției</h2>
+    <p class="lead">Documentele pe care metodistul le cere de obicei înainte de prima oră. Pregătite cu o zi înainte, într-un singur dosar.</p>
+    <div class="card" style="padding:4px 14px">
+      <ul class="list">
+        <li><label class="item"><input type="checkbox" data-k="d-proiecte"><div><span class="t">Cele 4 proiecte, în ordinea orelor, cu anexele</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="d-planif"><div><span class="t">Planificările calendaristice și proiectările unităților, la disciplinele zilei</span><span class="h">Cu săptămâna curentă marcată; metodistul caută lecția zilei în ele.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="d-catalog"><div><span class="t">Catalogul clasei și caietul învățătorului, la zi</span><span class="h">Calificative trecute, absențe motivate, observații; fără rubrici goale în ultimele săptămâni.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="d-orar"><div><span class="t">Orarul clasei și schema orară</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="d-eval"><div><span class="t">Instrumentele de evaluare folosite până acum</span><span class="h">Testul predictiv cu barem și rezultatele, probele sumative pe unități, fișele de observare. La definitivat, a doua inspecție: portofoliul complet, cu autoevaluarea pe anexa 4.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="d-portofoliu"><div><span class="t">Portofoliul profesional sau dosarul personal, după examen</span><span class="h">La definitivat: portofoliul de la art. 16. La grade: mapa cu documentele cerute de inspectorat (cererea, fișa de înscriere, adeverințele, rapoartele inspecțiilor anterioare), dacă metodistul le cere.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="d-ces"><div><span class="t">Planurile de intervenție pentru elevii cu cerințe educaționale speciale, dacă ai</span><span class="h">Și felul în care apar în proiectele zilei: sarcini adaptate, nu aceleași fișe pentru toți.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="d-materiale"><div><span class="t">Materialele didactice ale zilei, verificate</span><span class="h">Planșele, jetoanele, fișele tipărite, markerele, laptopul încărcat, videoproiectorul sau tabla interactivă pornite și testate cu fișierele deschise. O variantă fără curent pentru momentul digital.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="d-sala"><div><span class="t">Sala aranjată după formele de organizare din proiecte</span><span class="h">Dacă ai lucru pe grupe la ora a treia, știi deja cum muți băncile în pauză și cine te ajută.</span></div></label></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2><span class="n">5</span>În timpul lecțiilor</h2>
+    <p class="lead">Ce se vede din spatele clasei. Lucrurile mici care apar în fișă.</p>
+    <div class="card" style="padding:4px 14px">
+      <ul class="list">
+        <li><label class="item"><input type="checkbox" data-k="l-obiective"><div><span class="t">Anunți tema și obiectivele pe înțelesul copiilor, la fiecare lecție</span><span class="h">„Azi învățăm să…” și la final „ce am reușit azi?”. Fișa punctează formularea clară a obiectivelor și reflecția elevilor asupra rezultatelor.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="l-toti"><div><span class="t">Toți elevii lucrează, nu doar cei care ridică mâna</span><span class="h">Întrebări distribuite, lucru în perechi, bilețele de ieșire, tabla împărțită. „Participarea tuturor într-o atmosferă sigură” e un criteriu cu 5 puncte la grade.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="l-diferentiere"><div><span class="t">Diferențierea se vede: sarcini pe niveluri, sprijin pentru cine are nevoie</span><span class="h">Fișele cu două–trei niveluri sunt în anexe și le folosești efectiv.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="l-feedback"><div><span class="t">Dai feedback concret, nu doar „bravo”</span><span class="h">„Ai ordonat corect numerele, verifică semnul de la ultimul.” Elevii își corectează singuri sau în perechi măcar o dată.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="l-limbaj"><div><span class="t">Limbajul de specialitate, corect și constant</span><span class="h">Termenii din programă și din manual, nu diminutive și nu aproximări. Corectitudinea științifică e criteriu separat.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="l-timp"><div><span class="t">Timpul ține: fiecare lecție se încheie cu evaluarea și cu aprecierile, nu cu clopoțelul în mijlocul exercițiului</span><span class="h">Ai în proiect un exercițiu de rezervă și unul de sărit, marcate.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="l-produse"><div><span class="t">Produsele elevilor sunt valorizate: expuse, citite, comentate</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="l-tema"><div><span class="t">Tema pentru acasă e explicată și diferențiată, nu „exercițiile 3 și 4”</span></div></label></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2><span class="n">6</span>Discuția de la final <span class="who you">o pregătești tu</span></h2>
+    <p class="lead">Analiza pornește de la autoevaluarea ta. La grade, autoevaluarea are punctaj separat; la definitivat, intră la competențele profesionale.</p>
+    <div class="card" style="padding:4px 14px">
+      <ul class="list">
+        <li><label class="item"><input type="checkbox" data-k="a-ce"><div><span class="t">Pentru fiecare lecție, trei propoziții pregătite: ce mi-am propus, ce a mers, ce aș schimba</span><span class="h">Concret: „la a doua lecție, grupa 3 a terminat prea repede; data viitoare le dau sarcina-extensie de la început”. Nu „a fost bine”.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="a-elevi"><div><span class="t">Știi să vorbești despre elevi: cine are nevoie de sprijin, cine e în avans, ce faci cu ei</span><span class="h">Cu dovezi din testul predictiv și din observare, fără date personale în plus.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="a-planif"><div><span class="t">Poți arăta în planificare de unde vine fiecare lecție și unde duce</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="a-intrebari"><div><span class="t">Două întrebări pe care vrei să i le pui metodistului</span><span class="h">Discuția e și consiliere. Cine întreabă ceva concret arată că reflectează.</span></div></label></li>
+        <li><label class="item"><input type="checkbox" data-k="a-fise"><div><span class="t">Ceri copia fișelor de observare și verifici procesul-verbal înainte să semnezi</span><span class="h">Numele, data, disciplinele, nota. Copia fișelor ți se cuvine.</span></div></label></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2><span class="n">7</span>Ziua ta</h2>
+    <p class="lead">Scrie aici datele, ca să le ai la îndemână și pe hârtie.</p>
+    <div class="card">
+      <div class="dates">
+        <label><b>Data și ora inspecției</b><small>din graficul inspectoratului</small><input type="text" data-f="data" placeholder="zz.ll.aaaa, ora"></label>
+        <label><b>Metodistul / inspectorul</b><small>numele și școala lui</small><input type="text" data-f="metodist" placeholder="numele"></label>
+      </div>
+    </div>
+  </section>
+
+  <div class="offer">
+    <h2>Unde te pot ajuta</h2>
+    <p>Proiectele celor 4 lecții le pot genera pe datele tale: orarul zilei, manualele clasei, planificarea ta, modelul cerut de metodist. Fiecare cu anexele lui, în același format. Le verific înainte să ți le trimit; tu le adaptezi, le semnezi și le susții la clasă.</p>
+    <div class="price">
+      <div><b>400 lei</b><span>ziua de inspecție · 4 proiecte cu anexe</span></div>
+      <div><b>100 lei</b><span>un singur proiect de lecție</span></div>
+      <div><b>cadou</b><span>proiectarea unităților în care cad lecțiile</span></div>
+    </div>
+    <p>Preview înainte de plată, Word editabil, factură. Dacă inspecția e la mai puțin de 5 zile, scrie-mi întâi, ca să vedem dacă încape.</p>
+    <div class="links">
+      <a href="https://tally.so/r/jeeDRQ" rel="noopener">Formularul de comandă</a>
+      <a class="ghost" href="https://www.facebook.com/planificari.rapide" rel="noopener">Scrie-mi pe Pagină</a>
+      <a class="ghost" href="https://docs.google.com/document/d/1-TQOi2HD4wi0TaN-aSK8SiIr4sXjlGpnjjo1esRKAwg/edit?usp=sharing" rel="noopener">Termenii și condițiile</a>
+    </div>
+    <small class="print-url" data-url="facebook.com/planificari.rapide">Documentele sunt generate pe datele tale și verificate de mine; nu sunt avizate de nicio autoritate și nu garantează nota. Lecțiile le susții tu, iar nota o dă comisia.</small>
+  </div>
+
+  <footer>
+    <p><b>Surse:</b> pentru definitivat, metodologia aprobată prin OMEC 5434/2020, cu modificările ulterioare (art. 15 pentru inspecțiile de specialitate, anexa 2 pentru fișele de evaluare); pentru gradele didactice, fișele de evaluare a activității didactice din OME 4151/2022 (anexele 2a și 8a la metodologia formării continue, OMECTS 5561/2011); pentru titularizare, metodologia-cadru de mobilitate a anului respectiv. Procedurile inspectoratelor (de exemplu, procedura ISJ Botoșani pentru 2025–2026) descriu desfășurarea zilei: fișa de observare la fiecare activitate, analiza pornită de la autoevaluare, copia fișelor pentru cadrul didactic. Verifică mereu și precizările inspectoratului tău.</p>
+    <p><b>Confidențialitate:</b> pagina nu folosește cookie-uri, nu trimite date nicăieri și nu te urmărește. Bifele și datele introduse stau în browserul tău (localStorage) și le ștergi cu „Resetează bifele”. PDF-ul îl salvezi din butonul „Tipărește / salvează PDF” (alege „Salvează ca PDF” la imprimantă).</p>
+    <p><b>Operator:</b> BOSNEANU ALEXANDRU-CONSTANTIN PERSOANĂ FIZICĂ AUTORIZATĂ · CUI 54398356 · ORC F2026017444000 · București · <a href="mailto:acbosneanu@gmail.com">acbosneanu@gmail.com</a> · Pagina „Planificări și Proiectări Rapide”. Lista e gratuită și poate fi distribuită nemodificată, cu această sursă. Versiunea 1, 7 noiembrie 2026. Vezi și <a href="../portofoliu-definitivat/">lista pentru portofoliul de definitivat</a>.</p>
+  </footer>
+</main>
+
+<script>
+(function(){
+  var KEY='ppr-ziua-inspectiei-v1';
+  var state={c:{},f:{}};
+  try{var raw=localStorage.getItem(KEY);if(raw){state=JSON.parse(raw)||state;state.c=state.c||{};state.f=state.f||{};}}catch(e){}
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}}
+
+  var tb=document.getElementById('proj');
+  for(var i=1;i<=4;i++){
+    var tr=document.createElement('tr');
+    tr.innerHTML='<td>'+i+'</td><td><input type="checkbox" data-k="p'+i+'" aria-label="proiectul '+i+' gata"></td>'+
+      '<td><input type="text" data-f="p'+i+'d" placeholder="ora, disciplina" aria-label="ora și disciplina lecției '+i+'"></td>'+
+      '<td><input type="text" data-f="p'+i+'t" placeholder="subiectul, tipul lecției" aria-label="subiectul și tipul lecției '+i+'"></td>';
+    tb.appendChild(tr);
+  }
+
+  var checks=Array.prototype.slice.call(document.querySelectorAll('input[type=checkbox][data-k]'));
+  var fields=Array.prototype.slice.call(document.querySelectorAll('input[data-f]'));
+  var fill=document.getElementById('fill'),count=document.getElementById('count');
+
+  function render(){
+    var done=checks.filter(function(c){return c.checked;}).length;
+    count.textContent=done+' / '+checks.length+' bifate';
+    fill.style.width=(checks.length?Math.round(done*100/checks.length):0)+'%';
+  }
+  checks.forEach(function(c){
+    c.checked=!!state.c[c.getAttribute('data-k')];
+    c.addEventListener('change',function(){state.c[c.getAttribute('data-k')]=c.checked;save();render();});
+  });
+  fields.forEach(function(f){
+    var k=f.getAttribute('data-f');if(state.f[k])f.value=state.f[k];
+    f.addEventListener('input',function(){state.f[k]=f.value;save();});
+  });
+  render();
+
+  document.getElementById('print').addEventListener('click',function(){window.print();});
+  var reset=document.getElementById('reset'),armed=false,timer;
+  reset.addEventListener('click',function(){
+    if(!armed){armed=true;reset.textContent='Sigur? Apasă din nou';clearTimeout(timer);timer=setTimeout(function(){armed=false;reset.textContent='Resetează bifele';},4000);return;}
+    state={c:{},f:{}};save();
+    checks.forEach(function(c){c.checked=false;});fields.forEach(function(f){f.value='';});
+    armed=false;reset.textContent='Resetează bifele';render();
+  });
+})();
+</script>
+</body>
+</html>
